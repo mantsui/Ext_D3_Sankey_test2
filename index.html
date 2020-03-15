@@ -164,7 +164,8 @@
 		
 		// This opens the configuration window.
 		function configure() {
-			const popupUrl = `https://mantsui.github.io/react-test-19`;
+			//const popupUrl = `https://mantsui.github.io/react-test-19`;   03.12.20 code
+			const popupUrl = `http://localhost:3000/react-test-19`;
 			let defaultPayload = "";
 			tableau.extensions.ui.displayDialogAsync(popupUrl, defaultPayload, { height:700, width:500 }).then((closePayload) => {
 				getData_to_D3(); //0 3.30.19 test code
